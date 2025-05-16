@@ -13,41 +13,35 @@
     "introduction": {
         "title": "About me",
         "content": [
-            "I am a PhD student at the University of Science and Technology of China, majoring in computer science and technology. My research interests include artificial intelligence and machine learning. Currently, I am mainly focused on the application of deep learning in computer vision.",
-            "In addition to academic research, I am passionate about open source project development and technology sharing. I believe that technology can change the world and I am committed to turning research成果 into practical applications."
+            "I received my master's degree from the University of Science and Technology of China and was awarded the National Scholarship for Graduate Students. I completed algorithm internships at SenseTime and Tencent.",
+            "My research interests include AIGC, 3D Human mesh recovery, MLLM."
         ]
     },
     "experiences": {
-        "title": "实习与工作经历",
+        "title": "Experience",
         "entries": [
             {
-                "role": "研究实习生",
-                "company": "某某科技公司",
-                "companyLink": "https://www.example.com",
-                "location": "北京",
-                "duration": "2023年7月 - 2023年9月",
+                "role": "Research Intern",
+                "company": "SenseTime",
+                "location": "Shanghai",
+                "duration": "2023.11 - 2024.02",
                 "description": [
-                    "负责开发和优化计算机视觉算法",
-                    "设计并实现了一个高效的目标检测系统",
-                    "研究成果已应用于实际产品中"
+                    "Participated in human video AIGC project (Diffusion-based) on the problem of preserving identity (Using ControlNet、IP-Adapter)."
                 ]
             },
             {
-                "role": "教学助理",
-                "company": "某某大学",
-                "companyLink": "https://www.example.edu",
-                "location": "上海",
-                "duration": "2022年9月 - 2023年1月",
+                "role": "Research Intern",
+                "company": "Tencent",
+                "location": "Shenzhen",
+                "duration": "2024.06 - 2024.09",
                 "description": [
-                    "协助教授组织《机器学习导论》课程",
-                    "指导本科生完成课程项目",
-                    "获得最佳助教评价"
+                    "Based on CVAE, LSTM and MoE, optimize the effect of the model in the Motion In Between (motion intermediate frame generation), and apply it to Maya and Unity3d."
                 ]
             }
         ]
     },
     "publications": {
-        "title": "学术发表",
+        "title": "Publications",
         "entries": [
             {
                 "title": "基于深度学习的图像识别系统研究",
