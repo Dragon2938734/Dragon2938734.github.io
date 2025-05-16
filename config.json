@@ -44,22 +44,20 @@
         "title": "Publications",
         "entries": [
             {
-                "title": "基于深度学习的图像识别系统研究",
-                "authors": ["张三", "李四", "王五"],
-                "venue": "某某国际会议",
-                "year": "2023",
-                "link": "https://example.com/paper1.pdf",
-                "abstractLink": "https://example.com/abstract1",
-                "codeLink": "https://github.com/example/project1"
+                "title": "Enhancing video-based human mesh recovery with Attention-Mamba synergy",
+                "authors": ["Silong Sheng", "Tianyou Zheng", "Zhijie Ren", "Shengjiang Zhang", "Yang Zhang", "Weiwei Fu"],
+                "venue": "Expert Systems with Applications (Q1, Top)",
+                "year": "2025",
+                "link": "https://doi.org/10.1016/j.eswa.2025.127415",
+                "paperImage": "assets/paper1.png"
             },
             {
-                "title": "一种新的目标检测算法",
-                "authors": ["张三", "赵六"],
-                "venue": "某某学报",
-                "year": "2022",
-                "link": "https://example.com/paper2.pdf",
-                "abstractLink": "https://example.com/abstract2",
-                "codeLink": "https://github.com/example/project2"
+                "title": "SS-MVMETRO: Semi-supervised multi-view human mesh recovery transformer",
+                "authors": ["Silong Sheng", "Tianyou Zheng", "Zhijie Ren", "Yang Zhang", "Weiwei Fu"],
+                "venue": "Applied Intelligence (Q2)",
+                "year": "2024",
+                "link": "https://doi.org/10.1007/s10489-024-05435-9",
+                "paperImage": "assets/paper2.png"
             }
         ]
     },

@@ -178,9 +178,45 @@ h2::after {
 }
 
 /* 发表论文样式 */
+.publication-content {
+    display: flex;
+    gap: 20px;
+}
+
+.publication-image {
+    flex-shrink: 0;
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.paper-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.paper-preview:hover {
+    transform: scale(1.05);
+}
+
+.publication-details {
+    flex-grow: 1;
+}
+
 .publication-authors {
     color: var(--light-text-color);
     font-style: italic;
+    margin-bottom: 8px;
+}
+
+.publication-meta {
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
 }
 
 .publication-links {
@@ -192,6 +228,11 @@ h2::after {
     text-decoration: none;
     margin-right: 15px;
     font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.publication-links a:hover {
+    color: var(--primary-color);
 }
 
 /* 项目技术标签 */
@@ -245,6 +286,16 @@ footer {
 
     .social-links {
         justify-content: center;
+    }
+
+    .publication-content {
+        flex-direction: column;
+    }
+
+    .publication-image {
+        width: 100%;
+        height: 160px;
+        margin-bottom: 15px;
     }
 }
 

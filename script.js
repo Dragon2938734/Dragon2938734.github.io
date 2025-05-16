@@ -136,13 +136,22 @@ function updatePublications(publications) {
         card.className = 'publication-card fade-in';
         
         card.innerHTML = `
-            <h3>${pub.title}</h3>
-            <div class="publication-authors">${pub.authors.join(', ')}</div>
-            <div class="publication-meta">${pub.venue} (${pub.year})</div>
-            <div class="publication-links">
-                ${pub.link ? `<a href="${pub.link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> PDF</a>` : ''}
-                ${pub.abstractLink ? `<a href="${pub.abstractLink}" target="_blank" rel="noopener noreferrer"><i class="fas fa-align-left"></i> 摘要</a>` : ''}
-                ${pub.codeLink ? `<a href="${pub.codeLink}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> 代码</a>` : ''}
+            <div class="publication-content">
+                ${pub.paperImage ? `
+                    <div class="publication-image">
+                        <img src="${pub.paperImage}" alt="Paper preview" class="paper-preview">
+                    </div>
+                ` : ''}
+                <div class="publication-details">
+                    <h3>${pub.title}</h3>
+                    <div class="publication-authors">${pub.authors.join(', ')}</div>
+                    <div class="publication-meta">${pub.venue} (${pub.year})</div>
+                    <div class="publication-links">
+                        ${pub.link ? `<a href="${pub.link}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>` : ''}
+                        ${pub.abstractLink ? `<a href="${pub.abstractLink}" target="_blank" rel="noopener noreferrer"><i class="fas fa-align-left"></i> 摘要</a>` : ''}
+                        ${pub.codeLink ? `<a href="${pub.codeLink}" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> 代码</a>` : ''}
+                    </div>
+                </div>
             </div>
         `;
         
