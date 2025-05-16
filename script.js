@@ -22,7 +22,8 @@ async function initializePage() {
 
 // 获取配置文件
 async function fetchConfig() {
-    const response = await fetch(CONFIG_URL);
+    const timestamp = new Date().getTime();
+    const response = await fetch(`${CONFIG_URL}?t=${timestamp}`);
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
