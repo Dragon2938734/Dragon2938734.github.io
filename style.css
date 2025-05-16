@@ -383,4 +383,33 @@ footer {
     color: var(--light-text-color);
     font-size: 0.9rem;
     margin-bottom: 15px;
+}
+
+/* 背景图部分 */
+.background-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('assets/banner1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 40px 0;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(44, 62, 80, 0.7), rgba(52, 152, 219, 0.7));
+}
+
+/* 响应式设计补充 */
+@media (max-width: 768px) {
+    .background-banner {
+        height: 200px;
+        background-attachment: scroll;
+    }
 } 

@@ -62,22 +62,8 @@
         ]
     },
     "projects": {
-        "title": "项目经历",
+        "title": "Projects",
         "entries": [
-            {
-                "name": "开源深度学习框架",
-                "description": "开发了一个轻量级的深度学习框架，支持快速原型开发和模型部署。该框架已被多个研究项目采用。",
-                "technologies": ["Python", "PyTorch", "CUDA", "C++"],
-                "repoLink": "https://github.com/example/dl-framework",
-                "demoLink": "https://example.com/demo"
-            },
-            {
-                "name": "智能图像处理系统",
-                "description": "设计并实现了一个基于深度学习的图像处理系统，可以实现实时目标检测和图像分割。",
-                "technologies": ["Python", "TensorFlow", "OpenCV", "Docker"],
-                "repoLink": "https://github.com/example/image-processing",
-                "demoLink": "https://example.com/image-demo"
-            }
         ]
     }
 } 
