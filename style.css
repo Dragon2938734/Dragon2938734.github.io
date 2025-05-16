@@ -157,24 +157,73 @@ h2::after {
 }
 
 /* 经历卡片样式 */
-.experience-card, .publication-card, .project-card {
+.experience-card {
     background-color: var(--background-color);
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     border: 1px solid var(--border-color);
 }
 
-.experience-card h3, .publication-card h3, .project-card h3 {
-    color: var(--primary-color);
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-.experience-meta, .publication-meta, .project-meta {
+.company-name {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.role-title {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.experience-meta {
     color: var(--light-text-color);
     font-size: 0.9rem;
     margin-bottom: 15px;
+}
+
+.experience-description {
+    padding-left: 20px;
+}
+
+.experience-description ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.experience-description li {
+    position: relative;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.experience-description li::before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .experience-description {
+        padding-left: 10px;
+    }
 }
 
 /* 发表论文样式 */
@@ -313,4 +362,25 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* 卡片基础样式 */
+.publication-card, .project-card {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+}
+
+.publication-card h3, .project-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.publication-meta, .project-meta {
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
 } 

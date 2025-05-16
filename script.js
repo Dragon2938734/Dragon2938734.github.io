@@ -105,15 +105,19 @@ function updateExperiences(experiences) {
         card.className = 'experience-card fade-in';
         
         card.innerHTML = `
-            <h3>${exp.role}</h3>
+            <div class="experience-header">
+                <h3 class="company-name">${exp.company}</h3>
+                <span class="role-title">${exp.role}</span>
+            </div>
             <div class="experience-meta">
-                <span>${exp.company}</span> | 
                 <span>${exp.location}</span> | 
                 <span>${exp.duration}</span>
             </div>
-            <ul>
-                ${exp.description.map(desc => `<li>${desc}</li>`).join('')}
-            </ul>
+            <div class="experience-description">
+                <ul>
+                    ${exp.description.map(desc => `<li>${desc}</li>`).join('')}
+                </ul>
+            </div>
         `;
         
         experienceList.appendChild(card);
