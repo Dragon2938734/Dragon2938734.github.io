@@ -99,7 +99,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: var(--primary-color);
     padding: 100px 0;
 }
 
@@ -110,7 +110,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     z-index: 1;
 }
 
@@ -153,7 +153,7 @@ main {
 }
 
 .social-links a {
-    color: var(--light-text-color);
+    color: var(--primary-color);
     text-decoration: none;
     margin-right: 20px;
     transition: color 0.3s ease;
