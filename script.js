@@ -45,6 +45,11 @@ function updateBasicInfo(basicInfo) {
     document.getElementById('nav-name').textContent = basicInfo.name;
     document.getElementById('name').textContent = basicInfo.name;
     
+    // 更新个人照片
+    if (basicInfo.profileImage) {
+        document.getElementById('profile-image').src = basicInfo.profileImage;
+    }
+    
     const affiliationText = `${basicInfo.affiliation.department ? basicInfo.affiliation.department + ', ' : ''}${basicInfo.affiliation.institution}`;
     document.getElementById('affiliation').textContent = affiliationText;
 
@@ -70,6 +75,12 @@ function updateIntroduction(introduction) {
     const introDiv = document.getElementById('introduction');
     introDiv.innerHTML = '';
     
+    // 更新标题
+    const titleElement = document.querySelector('#about h2');
+    if (titleElement && introduction.title) {
+        titleElement.textContent = introduction.title;
+    }
+    
     introduction.content.forEach(paragraph => {
         const p = document.createElement('p');
         p.textContent = paragraph;
@@ -82,6 +93,12 @@ function updateIntroduction(introduction) {
 function updateExperiences(experiences) {
     const experienceList = document.getElementById('experience-list');
     experienceList.innerHTML = '';
+
+    // 更新标题
+    const titleElement = document.querySelector('#experiences h2');
+    if (titleElement && experiences.title) {
+        titleElement.textContent = experiences.title;
+    }
 
     experiences.entries.forEach(exp => {
         const card = document.createElement('div');
@@ -108,6 +125,12 @@ function updatePublications(publications) {
     const publicationList = document.getElementById('publication-list');
     publicationList.innerHTML = '';
 
+    // 更新标题
+    const titleElement = document.querySelector('#publications h2');
+    if (titleElement && publications.title) {
+        titleElement.textContent = publications.title;
+    }
+
     publications.entries.forEach(pub => {
         const card = document.createElement('div');
         card.className = 'publication-card fade-in';
@@ -131,6 +154,12 @@ function updatePublications(publications) {
 function updateProjects(projects) {
     const projectList = document.getElementById('project-list');
     projectList.innerHTML = '';
+
+    // 更新标题
+    const titleElement = document.querySelector('#projects h2');
+    if (titleElement && projects.title) {
+        titleElement.textContent = projects.title;
+    }
 
     projects.entries.forEach(project => {
         const card = document.createElement('div');
