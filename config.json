@@ -1,22 +1,20 @@
 {
     "basicInfo": {
-        "name": "张三",
-        "nationality": "中国",
+        "name": "Silong Sheng",
+        "profileImage": "assets/photo.jpg",
+        "nationality": "China",
         "affiliation": {
-            "institution": "某某大学",
-            "department": "计算机科学与技术学院",
-            "link": "https://www.example.edu"
+            "institution": "University of Science and Technology of China"
         },
         "email": "zhangsan@example.edu",
         "github": "https://github.com/zhangsan",
-        "linkedin": "https://www.linkedin.com/in/zhangsan",
         "googleScholar": "https://scholar.google.com/citations?user=example"
     },
     "introduction": {
-        "title": "关于我",
+        "title": "About me",
         "content": [
-            "我是某某大学计算机科学与技术学院的一名博士研究生，研究方向为人工智能和机器学习。目前主要关注深度学习在计算机视觉领域的应用。",
-            "在学术研究之外，我热衷于开源项目开发和技术分享。我相信技术可以改变世界，并致力于将研究成果转化为实际应用。"
+            "I am a PhD student at the University of Science and Technology of China, majoring in computer science and technology. My research interests include artificial intelligence and machine learning. Currently, I am mainly focused on the application of deep learning in computer vision.",
+            "In addition to academic research, I am passionate about open source project development and technology sharing. I believe that technology can change the world and I am committed to turning research成果 into practical applications."
         ]
     },
     "experiences": {
